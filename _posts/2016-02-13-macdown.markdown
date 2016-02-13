@@ -1,8 +1,6 @@
 ---
-layout: post
+layout: page
 title:  "Welcome to macdown!"
-date:   2016-02-13 19:24:26 +0800
-categories: jekyll update
 ---
 
 Markdown
@@ -10,7 +8,7 @@ Markdown
 Markdown是John Gruber发明的一个文本格式语法，目标是成为一种易读的标记。原始的Markdown标记可以[戳我查看](http://daringfireball.net/projects/markdown/syntax)。
 
 MacDown
-=
+===
 MacDown是mac环境下的一款markdown编辑工具，它支持所有的原始markdown标记，还提供了额外的一些功能，并且可以实时显示你正在编辑的内容。
 
 换行
@@ -37,6 +35,7 @@ MacDown是mac环境下的一款markdown编辑工具，它支持所有的原始ma
 	＝
 	标题2
 	－
+	
 或者
 
 	#标题1#
