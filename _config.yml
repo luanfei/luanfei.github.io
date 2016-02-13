@@ -1,7 +1,7 @@
 # Site settings
 title:aini365
 email:a43493901@126.com
-description: > #这是一个技术学习与分享博客
+description:"这是一个技术学习与分享博客"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
