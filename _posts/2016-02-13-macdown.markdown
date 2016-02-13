@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Welcome to macdown!"
+date:   2016-02-13 19:24:26 +0800
+categories: jekyll update
+---
 ##Markdown
 Markdown是John Gruber发明的一个文本格式语法，目标是成为一种易读的标记。原始的Markdown标记可以[戳我查看](http://daringfireball.net/projects/markdown/syntax)。
 
