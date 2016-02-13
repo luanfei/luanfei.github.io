@@ -1,0 +1,75 @@
+##Markdown##
+Markdown是John Gruber发明的一个文本格式语法，目标是成为一种易读的标记。原始的Markdown标记可以[戳我查看](http://daringfireball.net/projects/markdown/syntax)。
+##MacDown##
+MacDown是mac环境下的一款markdown编辑工具，它支持所有的原始markdown标记，还提供了额外的一些功能，并且可以实时显示你正在编辑的内容。
+###基本功能###
+####换行####
+希望强制换行的话，输入回车即可
+
+	这是回车
+	换行
+###加粗###
+首尾加\*\*或\_\_
+	
+	**我是星号加粗** 
+	__我是下划线加粗__
+###标题###
+加＃或者换行加＝或者－
+
+	标题1
+	＝
+	标题2
+	－
+或者
+
+	#标题1#
+	##标题2##
+###链接###
+邮件地址
+	
+	<test@aini365.com>
+url即链接
+
+	<http://www.aini365.com>
+带文本的链接
+
+	[爱你365](http://www.aini365.com "个人网站")
+如果你希望把url单独出来，可以定义一个别名，比如mysite然后`[链接文字][mysite]`
+
+	[mysite]:http://www.aini365.com "test"
+	[爱你365][mysite]
+###图片###
+展示图片
+
+	![Alt Image Text](path/or/url/to.jpg "Optional Title")
+别名，同链接类似
+
+	![Alt Image Text][image-id]
+	[image-id]: path/or/url/to.jpg "Optional Title"
+列表
+
+* 列表之前必须有空行或空的元素
+* 无序列表以\*或\-开头
+* 有序列表以数字\.开头
+
+```
+	* 红色
+	* 绿色
+	* 蓝色
+	
+	1. 红色
+	2. 绿色
+	3. 蓝色
+```
+###块引用###
+使用\>
+
+	>上海市长宁区 买家
+	>>亲，请给下邮寄地址 店小二
+###行内代码###
+hello `world`
+
+hello ``colorful `world` ``
+
+	hello `world`
+	hello ``colorful `world` ``
