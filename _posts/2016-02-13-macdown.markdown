@@ -1,6 +1,12 @@
 ---
-layout: page
-title:  "Welcome to macdown!"
+layout:     post
+title:      "markdown及macdown的使用"
+subtitle:   "macdown"
+date:       2016-02-13 20:00:00
+author:     "luanfei"
+header-img: 
+tags:
+    - markdown
 ---
 
 Markdown
