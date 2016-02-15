@@ -1,4 +1,4 @@
-#Where things are
+#where things are
 source:       .
 destination:  ./_site
 plugins_dir:      ./_plugins
@@ -42,7 +42,7 @@ timezone:      null
 title: aini365
 subTitle: luanfei's blog.
 description: 这是 luanfei 的一个博客。
-url: http://localhost:4000
+url: http://www.aini365.com
 feed: /atom.xml
 
 #菜单配置
