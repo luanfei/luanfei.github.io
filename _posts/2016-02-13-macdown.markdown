@@ -2,6 +2,8 @@
 layout:     post
 title:      "markdown及macdown的使用"
 subtitle:   "macdown"
+description: markdown及macdown的使用。
+keywords: Markdown
 date:       2016-02-13 20:00:00
 author:     "luanfei"
 header-img: 

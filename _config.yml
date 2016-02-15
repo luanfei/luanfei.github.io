@@ -1,0 +1,83 @@
+# Where things are
+source:       .
+destination:  ./_site
+plugins_dir:      ./_plugins
+layouts_dir:      ./_layouts
+gems: [jekyll-paginate]
+paginate:     8
+
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      []
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+textile_ext:  "textile"
+
+# Filtering Content
+show_drafts:  null
+limit_posts:  0
+future:       true
+unpublished:  false
+
+# Conversion
+markdown:     kramdown
+highlighter:  pygments
+lsi:          false
+excerpt_separator: "\n\n"
+
+# Serving
+detach:       false
+port:         4000
+host:         127.0.0.1
+baseurl:      "" # does not include hostname
+
+# Outputting
+permalink:     date
+paginate_path: /page:num
+timezone:      null
+
+#站点基础配置
+title: aini365
+subTitle: luanfei's blog.
+description: 这是 luanfei 的一个博客。
+url: http://localhost:4000
+feed: /atom.xml
+
+#菜单配置
+nav:
+  - text: 首页
+    url: /index.html
+    icon: icon-home
+    class: home
+  - text: 文章归档
+    url: /archives.html
+    icon: icon-reorder
+    class: none
+  - text: 关于我
+    url: /contact.html
+    icon: icon-envelope-alt
+    class: none
+  - text: 联系我
+    url: <a43493901@126.com>
+    icon: icon-heart
+    class: none
+  - text: 博客源代码
+    url: https://github.com/luanfei
+    icon: icon-github
+    class: none
+
+page:
+  - text: 文章分类
+    url: /archives.html
+    last: true
+  - text: 友情链接
+    url: /links.html
+    last: true
+  - text: 关于我
+    url: /contact.html
+    last: false
+
+author:
+  name: luanfei
