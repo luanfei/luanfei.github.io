@@ -1,0 +1,55 @@
+---
+layout:     post
+title:      "git常用命令的使用"
+subtitle:   "git"
+description: "git常用命令的使用"
+keywords: git
+date:       2016-02-15 23:43:00
+author:     "luanfei"
+header-img: 
+tags:
+    - git
+---
+
+### 推送代码:
+
+git push origin master
+git push origin HEAD:refs/for/master%r=username
+
+### 切换分支
+
+git checkout -b release
+git checkout -b release origin/release
+
+### 合并
+
+git rebase test
+
+git merge test
+
+git cherry-pick commitid
+
+### 回退
+
+git reset --hard commitid
+
+git reset --soft commitid
+
+### 保存恢复现场
+
+保存现场
+git stash
+恢复现场
+git stash pop
+
+### 修正
+
+git commit -a --amend
+
+### 删除远程分支
+git branch -r -d origin/branch-name
+
+### 标签
+git tag -a v0.1.2 -m “0.1.2版本”
+git push origin v0.1.2 # 将v0.1.2标签提交到git服务器
+git push origin –tags # 将本地所有标签一次性提交到git服务器
