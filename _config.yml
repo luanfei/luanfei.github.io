@@ -59,8 +59,9 @@ nav:
     url: /contact.html
     icon: icon-envelope-alt
     class: none
-  - text: 联系我
-    url: <a43493901@126.com>
+  - text: 修改主题
+    url: #
+    id:J-changeTheme
     icon: icon-heart
     class: none
   - text: 博客源代码
