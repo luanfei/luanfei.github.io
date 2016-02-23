@@ -60,8 +60,8 @@ nav:
     icon: icon-envelope-alt
     class: none
   - text: 修改主题
-    url: 
-    id:J-changeTheme
+    url: #
+    id: J-changeTheme
     icon: icon-heart
     class: none
   - text: 博客源代码
