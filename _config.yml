@@ -60,7 +60,7 @@ nav:
     icon: icon-envelope-alt
     class: none
   - text: 修改主题
-    url: #
+    url: 
     id:J-changeTheme
     icon: icon-heart
     class: none
