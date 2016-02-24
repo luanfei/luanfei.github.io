@@ -13,17 +13,24 @@ tags:
 
 ### 1.生成新的ssh
 
-``ssh-keygen -t ras -C "test@gmail.com"``
+```
+ssh-keygen -t ras -C "test@gmail.com"
+```
 
 ### 2.复制～/.ssh/id_rsa.pub
 
-``在github中增加上面文件内容``
+```
+在github中增加上面文件内容
+```
 
 ### 3.测试
 
-``ssh -T git@github.com``
+```
+ssh -T git@github.com
+```
 
 ### 4.git设置
-``git config --global user.name "username"``
-
-``git config --global user.email "test@gmail.com"``
+```
+git config --global user.name "username"
+git config --global user.email "test@gmail.com"
+```
