@@ -15,31 +15,41 @@ tags:
 
 * WinDebug的命令以.开头,例如:
 
->.cls
+```
+ .cls
+```
 
 * 插件的命令以!开头,例如:
 
-> !clrstack
+```
+!clrstack
+```
 
 ## 开始使用
 
 * 菜单打开dump文件
 
-> File>Open Crash Dump...
+```
+ File>Open Crash Dump...
+ ```
 
 * 加载psscor4插件
 
-> .load psscor4\psscor4
+```
+ .load psscor4\psscor4
+ ```
 
 * 设置符号文件
 
-> File>Symbol File Path...
->
->输入 SRV*c:\temp*http://msdl.microsoft.com/download/symbols
->
->勾选 Reload
->
-> OK
+```
+ File>Symbol File Path...
+
+输入 SRV*c:\temp*http://msdl.microsoft.com/download/symbols
+
+勾选 Reload
+
+OK
+```
 
 ## 挂起
 
@@ -47,57 +57,80 @@ tags:
 
 * 有多少线程在执行
 
->!threadpool
+```
+!threadpool
+```
 
 ###查看堆栈信息
 
 * 查看所有native调用堆栈
 
-> ~* kb 2000 
+```
+~* kb 2000 
+```
 
 * 查看所有.net调用堆栈
 
-> ~* e!clrstack 
+```
+ ~* e!clrstack 
+```
 
 * 查看锁
 
-> !syncblk 
+```
+ !syncblk 
+```
 
 ### 切换到等待线程
 
 * 切换线程(此处切换到线程21)
 
-> ~21s
-
+```
+ ~21s
+```
+ 
 * 查看调用堆栈
 
->kb 2000
->
->或
->
->!clrstack
+```
+kb 2000
+
+或
+
+!clrstack
+```
 
 ## 程序崩溃
 
 * 查看抛出异常
 
-> !pe
+```
+ !pe
+```
 
 * 检查堆栈上的对象(dump stack object)
 
-> !dso
+```
+ !dso
+```
 
 ## cpu占用高
 
-> !threadpool
-> !runaway
-> !threads -special
-> !clrstack
+```
+ !threadpool
+
+ !runaway
+
+ !threads -special
+
+ !clrstack
+```
 
 ## 内存占用高
 
-> !clrusage
->
-> !eeheeap -gc
->
-> !dumphead -min 85000
+```
+ !clrusage
+
+!eeheeap -gc
+
+!dumphead -min 85000
+```
