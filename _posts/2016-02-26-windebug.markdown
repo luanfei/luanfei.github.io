@@ -1,0 +1,68 @@
+---
+layout:     post
+title:      "windows debug常用命令"
+subtitle:   "win debug"
+description: "win debug"
+keywords: win debug
+date:       2016-02-26 14:55:00
+author:     "luanfei"
+header-img: 
+tags:
+    - debug
+---
+
+## 命令基本语法
+* WinDebug的命令以.开头,例如:
+>.cls
+* 插件的命令以!开头,例如:
+> !clrstack
+## 开始使用
+* 菜单打开dump文件
+> File>Open Crash Dump...
+* 加载psscor4插件
+> .load psscor4\psscor4
+* 设置符号文件
+> File>Symbol File Path...
+>
+>输入 SRV*c:\temp*http://msdl.microsoft.com/download/symbols
+>
+>勾选 Reload
+>
+> OK
+## 挂起
+### 查看线程运行情况
+* 有多少线程在执行
+>!threadpool
+###查看堆栈信息
+* 查看所有native调用堆栈
+> ~* kb 2000 
+
+* 查看所有.net调用堆栈
+> ~* e!clrstack 
+* 查看锁
+> !syncblk 
+### 切换到等待线程
+* 切换线程(此处切换到线程21)
+> ~21s
+* 查看调用堆栈
+>kb 2000
+>
+>或
+>
+>!clrstack
+## 程序崩溃
+* 查看抛出异常
+> !pe
+* 检查堆栈上的对象(dump stack object)
+> !dso
+## cpu占用高
+> !threadpool
+> !runaway
+> !threads -special
+> !clrstack
+## 内存占用高
+> !clrusage
+>
+> !eeheeap -gc
+>
+> !dumphead -min 85000
