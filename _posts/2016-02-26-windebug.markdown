@@ -16,7 +16,7 @@ tags:
 * WinDebug的命令以.开头,例如:
 
 ```
- .cls
+.cls
 ```
 
 * 插件的命令以!开头,例如:
@@ -30,19 +30,19 @@ tags:
 * 菜单打开dump文件
 
 ```
- File>Open Crash Dump...
- ```
+File>Open Crash Dump...
+```
 
 * 加载psscor4插件
 
 ```
- .load psscor4\psscor4
- ```
+.load psscor4\psscor4
+```
 
 * 设置符号文件
 
 ```
- File>Symbol File Path...
+File>Symbol File Path...
 
 输入 SRV*c:\temp*http://msdl.microsoft.com/download/symbols
 
@@ -128,7 +128,7 @@ kb 2000
 ## 内存占用高
 
 ```
- !clrusage
+!clrusage
 
 !eeheeap -gc
 
