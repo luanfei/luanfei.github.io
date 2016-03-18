@@ -14,8 +14,11 @@ tags:
 ### 推送代码:
 
 git push origin master
+
 git push origin HEAD:refs/for/master%r=username
+
 git push --no-thin origin HEAD:refs/for/branchname
+
 
 ### 切换分支
 
